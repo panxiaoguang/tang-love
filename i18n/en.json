@@ -1,5 +1,4 @@
 {
-  "label": "🌍 English",
   "pageTitle": "Will you be my sweetheart? (✧ω✧)",
   "greeting": "What cute name should I call you? (´• ω •`) ♡",
   "subGreeting": "Secret is okay~ (⁄ ⁄•⁄ω⁄•⁄ ⁄)(KEEP SPACE)",
@@ -9,8 +8,8 @@
   "douyinLinkText": "TikTok ver.Chinese Mainland Douyin(๑˃ᴗ˂)ﻭ",
   "repoLinkText": "Source Code (ﾉ◕ヮ◕)ﾉ*:･ﾟ✧",
   "freeNotice": "ฅ•ﻌ•ฅ FREE PROJECT! If you paid, go get refund! (╯°□°）╯",
-  "questionTemplate": "{{username}}? Will you be my forever love? (ﾉ>ω<)ﾉ♡",
-  "loveMessage": "LOVE EXPLOSION!!! ♡⸜(˶˃ ᵕ ˂˶)⸝\n{{username}}! You stole my heart! (灬º‿º灬)♡",
+  "questionTemplate": "{username}? Will you be my forever love? (ﾉ>ω<)ﾉ♡",
+  "loveMessage": "LOVE EXPLOSION!!! ♡⸜(˶˃ ᵕ ˂˶)⸝\n{username}! You stole my heart! (灬º‿º灬)♡",
   "yesButton": "Yes! (✧∀✧)",
   "noButton": "No... (；へ：)",
   "noTexts": [

@@ -1,4 +1,4 @@
-/* 引入自定义字体Lolita | Introduce the custom font Lolita */
+/* 引入自定义字体Lolita */
 @font-face {
     font-family: 'Lolita';
     src: url('assets/fonts/Lolita.woff2') format('woff2'),
@@ -8,7 +8,7 @@
     font-style: normal;
 }
 
-/* 全局body样式设置 | Global body style settings */
+/* 全局样式 */
 body {
     background-color: #f1d5da;
     text-align: center;
@@ -21,34 +21,24 @@ body {
     height: 100vh;
 }
 
-/* 表白内容容器样式 | Style of the confession content container */
-.container {
+/* 输入名字容器样式 */
+#nameInputContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     width: 90%;
     max-width: 500px;
 }
 
-/* 主图片样式 | Style of the main image */
-#mainImage {
-    width: 100%;
-    max-width: 200px;
-    transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
-}
-
-/* 侧头图片样式 | Style of the side head image */
-#sidehead {
-    width: 100%;
-    max-width: 200px;
-    margin-bottom: 20px;
-}
-
-/* 链接样式 | Style of the links */
-#nameInputContainer {
+/* 侧头图片及链接容器样式 */
+#sidehead-wrapper {
+    position: relative;
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
-/*免费声明样式 | Free declaration*/
+/* 免费声明样式 */
 .free-notice {
     font-size: 1.5vw;
     color: #ff6b6b;
@@ -59,18 +49,17 @@ body {
     animation: bounce 1s infinite alternate;
 }
 
+/* 免费声明动画关键帧 */
 @keyframes bounce {
-    from { transform: translateY(0); }
-    to { transform: translateY(-3px); }
+    from {
+        transform: translateY(0);
+    }
+    to {
+        transform: translateY(-3px);
+    }
 }
 
-#sidehead-wrapper {
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
+/* 小红书、抖音、GitHub 链接样式 */
 #xiaohongshuLink,
 #douyinLink,
 #repoLink {
@@ -80,7 +69,7 @@ body {
     margin-top: 5px;
 }
 
-/* 标题样式 | Style of the title */
+/* 标题样式 */
 h1 {
     font-size: 3.5vw;
     color: #68495b;
@@ -89,8 +78,113 @@ h1 {
     transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
 }
 
-/* 按钮通用样式 | General style of the buttons */
-button {
+/* 输入框样式 */
+input[type="text"] {
+    font-family: 'Lolita', Arial, sans-serif;
+    font-size: 3.5vw;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 20px;
+    margin-bottom: 10px;
+    width: 90%;
+    box-sizing: border-box;
+    word-wrap: break-word;
+}
+
+/* 输入框获得焦点样式 */
+input[type="text"]:focus {
+    outline: 2px solid #d4818e;
+    outline-offset: 2px;
+}
+
+/* 操作行样式 */
+.action-row {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* 确认按钮和语言选择器通用样式 */
+#confirmNameButton,
+#languageSelect.styled-select {
+    font-family: 'Lolita', Arial, sans-serif;
+    font-size: 4vw;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    margin: 10px;
+    background-color: #a581d4;
+    color: white;
+    transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+}
+
+/* 确认按钮和语言选择器激活（点击）样式 */
+#confirmNameButton:active,
+#languageSelect.styled-select:active {
+    transform: scale(0.95);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+/* 确认按钮和语言选择器获得焦点样式 */
+#confirmNameButton:focus,
+#languageSelect.styled-select:focus {
+    outline: 2px solid #d4818e;
+    outline-offset: 2px;
+}
+
+/* 语言选择器自定义下拉箭头 */
+#languageSelect.styled-select {
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    background-image: url('data:image/svg+xml;utf8,<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M7 10L12 15L17 10H7Z" fill="white"/></svg>');
+    background-repeat: no-repeat;
+    background-position: right 15px center;
+    background-size: 12px;
+    padding-right: 45px;
+}
+
+/* 语言选择器选项样式 */
+#languageSelect.styled-select option {
+    background: #f1d5da;
+    color: #68495b;
+    font-family: 'Lolita', Arial, sans-serif;
+}
+
+/* 表白内容容器样式 */
+.container {
+    width: 90%;
+    max-width: 500px;
+}
+
+/* 主图片样式 */
+#mainImage {
+    width: 100%;
+    max-width: 200px;
+    transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+}
+
+/* 问题文本样式 */
+#question {
+    font-size: 3.5vw;
+    color: #68495b;
+    margin: 20px 0;
+    word-wrap: break-word;
+    transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+}
+
+/* 按钮容器样式 */
+.buttons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* “可以”按钮样式 */
+#yes {
+    background-color: #d4818e;
+    color: white;
     font-family: 'Lolita', Arial, sans-serif;
     font-size: 4vw;
     padding: 10px 20px;
@@ -101,90 +195,46 @@ button {
     transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
 }
 
-/* 语言选择器样式 | Language selector styling */
-#languageSelect.styled-select {
-    /* 字体设置 | Font settings */
-    font-family: 'Lolita', Arial, sans-serif;
-    /* 主背景色（与确认按钮相同）| Main background color (same as confirm button) */
-    background-color: #a581d4;
-    color: white;
-    /* 圆角半径 | Border radius */
-    border-radius: 20px;
-    /* 内边距（右侧预留箭头空间）| Padding (right padding for arrow) */
-    padding: 10px 45px 10px 20px;
-    border: none;
-    /* 响应式字号 | Responsive font size */
-    font-size: 4vw;
-    cursor: pointer;
-    /* 隐藏原生样式 | Hide native styling */
-    appearance: none;
-    -webkit-appearance: none;
-    -moz-appearance: none;
-    /* 过渡动画 | Transition animation */
-    transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
-    /* 自定义下拉箭头 | Custom dropdown arrow */
-    background-image: url('data:image/svg+xml;utf8,<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M7 10L12 15L17 10H7Z" fill="white"/></svg>');
-    background-repeat: no-repeat;
-    background-position: right 15px center;
-    background-size: 12px;
-}
-
-/* 桌面端适配 | Desktop adaptation */
-@media (min-width: 768px) {
-    #languageSelect.styled-select {
-        font-size: 18px;
-        /* 调整内边距 | Adjust padding */
-        padding: 10px 40px 10px 15px;
-        /* 箭头位置微调 | Arrow position adjustment */
-        background-position: right 12px center;
-    }
-}
-
-/* 移动端优化 | Mobile optimization */
-@media (max-width: 767px) {
-    #languageSelect.styled-select {
-        /* 响应式字号 | Responsive font size */
-        font-size: 5.5vw;
-        margin: 5px;
-    }
-}
-
-/* 交互状态 | Interaction states */
-#languageSelect.styled-select:focus {
-    /* 焦点轮廓 | Focus outline */
-    outline: 2px solid #d4818e;
-    outline-offset: 2px;
-}
-
-#languageSelect.styled-select:active {
-    /* 点击效果 | Click effect */
+/* “可以”按钮激活（点击）样式 */
+#yes:active {
     transform: scale(0.95);
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
 }
 
-/* 下拉菜单样式 | Dropdown menu styling */
-#languageSelect.styled-select option {
-    /* 选项背景色 | Option background color */
-    background: #f1d5da;
-    /* 选项文字色 | Option text color */
-    color: #68495b;
-    font-family: 'Lolita', Arial, sans-serif;
+/* “可以”按钮获得焦点样式 */
+#yes:focus {
+    outline: 2px solid #d4818e;
+    outline-offset: 2px;
 }
 
-/* “可以”按钮样式 | Style of the "Yes" button */
-#yes {
-    background-color: #d4818e;
-    color: white;
-}
-
-/* “不要”按钮样式 | Style of the "No" button */
+/* “不要”按钮样式 */
 #no {
     background-color: #6784b1;
     color: white;
+    font-family: 'Lolita', Arial, sans-serif;
+    font-size: 4vw;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    margin: 10px;
     position: relative;
+    transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
 }
 
-/* 表白成功页面样式 | Style of the successful confession page */
+/* “不要”按钮激活（点击）样式 */
+#no:active {
+    transform: scale(0.95);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+/* “不要”按钮获得焦点样式 */
+#no:focus {
+    outline: 2px solid #d4818e;
+    outline-offset: 2px;
+}
+
+/* 表白成功页面样式 */
 .yes-screen {
     position: fixed;
     top: 0;
@@ -199,55 +249,56 @@ button {
     opacity: 0;
 }
 
-/* 表白成功文字样式 | Style of the text for successful confession */
+/* 表白成功文字样式 */
 .yes-text {
     font-family: 'Lolita', Arial, sans-serif;
     font-size: 7vw;
 }
 
-/* 表白成功图片样式 | Style of the image for successful confession */
+/* 表白成功图片样式 */
 .yes-image {
     width: 50%;
     max-width: 300px;
 }
 
-/* 输入框样式 | Style of the input box */
-input[type="text"] {
-    font-family: 'Lolita', Arial, sans-serif;
-    font-size: 3.5vw;
-    padding: 10px;
-    border: 1px solid #ccc;
-    border-radius: 20px;
-    margin-bottom: 10px;
-    width: 90%;
-    box-sizing: border-box;
-    word-wrap: break-word;
+/* 从下往上冒出和渐显动画关键帧 */
+@keyframes slideUpFadeIn {
+    from {
+        transform: translateY(100%);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
 }
 
-/* 按钮激活（点击）样式，优化点击反馈 | Style of the button when activated (clicked), optimizing click feedback */
-button:active {
-    transform: scale(0.95);
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+/* 触发从下往上冒出和渐显动画的类名 */
+.slide-up-fade-in {
+    animation: slideUpFadeIn 0.5s ease-out both;
 }
 
-/* 按钮获得焦点样式，焦点管理 | Style of the button when it gets focus, focus management */
-button:focus {
-    outline: 2px solid #d4818e;
-    outline-offset: 2px;
+/* 慢慢浮现动画关键帧 */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
 }
 
-/* 输入框获得焦点样式，焦点管理 | Style of the input box when it gets focus, focus management */
-input:focus {
-    outline: 2px solid #d4818e;
-    outline-offset: 2px;
+/* 触发慢慢浮现动画的类名 */
+.fade-in {
+    animation: fadeIn 1s ease-out both;
 }
 
-/* 电脑端样式优化，当屏幕宽度大于等于768px时应用以下样式 | Style optimization for desktop, apply the following styles when the screen width is greater than or equal to 768px */
+/* 电脑端样式优化 */
 @media (min-width: 768px) {
     body {
         display: flex;
     }
-   .container {
+    .container {
         position: absolute;
         top: 50%;
         left: 50%;
@@ -262,13 +313,18 @@ input:focus {
         font-size: 20px;
         margin: 20px 0;
     }
-    button {
+    #confirmNameButton,
+    #languageSelect.styled-select {
         font-size: 18px;
     }
-   .yes-text {
+    #languageSelect.styled-select {
+        padding: 10px 40px 10px 15px;
+        background-position: right 12px center;
+    }
+    .yes-text {
         font-size: 36px;
     }
-   .yes-image {
+    .yes-image {
         width: 300px;
     }
     input[type="text"] {
@@ -292,16 +348,13 @@ input:focus {
     }
 }
 
-/* 移动端优先样式优化 | Mobile-first style optimization */
+/* 移动端优先样式优化 */
 @media (max-width: 767px) {
-    /* 基础布局调整 | Base layout adjustment */
     body {
         height: auto;
         min-height: 100vh;
         padding: 15px;
     }
-
-    /* 输入容器优化 | Input container optimization */
     #nameInputContainer {
         width: 95%;
         transform: none;
@@ -309,59 +362,48 @@ input:focus {
         top: auto;
         left: auto;
     }
-
-    /* 文字大小优化 | Text size optimization */
     h1 {
         font-size: 6vw !important;
         margin: 10px 0;
     }
-
-    /* 免费声明优化 | Free notice optimization */
     .free-notice {
-        font-size: 14px;  /* 固定像素保证可读性 | Fixed pixels for readability */
+        font-size: 14px;
         margin: 5px 0;
         padding: 6px;
     }
-
-    /* 按钮优化 | Button optimization */
-    button {
+    #confirmNameButton,
+    #languageSelect.styled-select {
         font-size: 5.5vw;
         padding: 8px 15px;
         margin: 5px;
     }
-
-    /* 输入框优化 | Input field optimization */
     input[type="text"] {
         font-size: 16px;
         width: 85%;
     }
-
-    /* 链接优化 | Link optimization */
     #xiaohongshuLink,
     #douyinLink,
     #repoLink {
         font-size: 14px;
         margin-top: 3px;
     }
-
-    /* 图片尺寸优化 | Image size optimization */
-    #mainImage, #sidehead {
+    #mainImage,
+    #sidehead {
         max-width: 150px;
     }
-
-    /* 表白成功页面优化 | Success page optimization */
     .yes-text {
         font-size: 8vw;
         padding: 0 10px;
     }
 }
 
-/* 超小屏适配 (iPhone SE等) | Ultra-small screen adaptation (e.g. iPhone SE) */
+/* 超小屏适配 (iPhone SE等) */
 @media (max-width: 320px) {
     h1 {
         font-size: 20px !important;
     }
-    button {
+    #confirmNameButton,
+    #languageSelect.styled-select {
         font-size: 18px;
     }
     .free-notice {
@@ -369,7 +411,7 @@ input:focus {
     }
 }
 
-/* 横向手机适配 | Landscape mobile adaptation */
+/* 横向手机适配 */
 @media (max-height: 500px) and (orientation: landscape) {
     #nameInputContainer {
         transform: scale(0.85);
@@ -378,38 +420,4 @@ input:focus {
     #sidehead {
         max-width: 100px;
     }
-}
-
-
-/* 新增动画关键帧，实现从下往上冒出和渐显效果 | Add a new animation keyframe to achieve the effect of emerging from the bottom and fading in */
-@keyframes slideUpFadeIn {
-    from {
-        transform: translateY(100%);
-        opacity: 0;
-    }
-    to {
-        transform: translateY(0);
-        opacity: 1;
-    }
-}
-
-/* 用于触发动画的类名 | Class name used to trigger the animation */
-.slide-up-fade-in {
-    animation: slideUpFadeIn 0.5s ease-out both;
-}
-
-/* 新增动画关键帧，实现慢慢浮现效果 | Add a new animation keyframe to achieve the effect of slowly fading in */
-@keyframes fadeIn {
-    from {
-        opacity: 0;
-    }
-    to {
-        opacity: 1;
-    }
-}
-
-
-/* 用于触发慢慢浮现动画的类名 | Class name used to trigger the slow fade-in animation */
-.fade-in {
-    animation: fadeIn 1s ease-out both;
 }

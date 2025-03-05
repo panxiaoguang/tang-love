@@ -1,5 +1,4 @@
 {
-    "label": "🌍 한국어",
     "pageTitle": "제 연인이 되어 주실래요? (๑•. •๑)",
     "greeting": "당신을 어떤 귀여운 이름으로 불러야 할까요? (*>﹏<*)",
     "subGreeting": "만약 말하고 싶지 않다면 비워두셔도 돼요♪",
@@ -9,8 +8,8 @@
     "douyinLinkText": "TikTok China(๑•. •๑)",
     "repoLinkText": "소스 코드 저장소(๑•. •๑)",
     "freeNotice": "ฅ•ω•ฅ 무료 프로젝트예요! 돈 내셨다면 바로 환불 요청하세요!",
-    "questionTemplate": "{{username}}님, 제 연인이 되어 주실래요? (๑•. •๑)",
-    "loveMessage": "!!!당신을 정말 좋아해요!! ( >᎑<)♡︎ᐝ {{username}}님, 영원히 함께 해주세요♡︎ᐝ(>᎑< )",
+    "questionTemplate": "{username}님, 제 연인이 되어 주실래요? (๑•. •๑)",
+    "loveMessage": "!!!당신을 정말 좋아해요!! ( >᎑<)♡︎ᐝ {username}님, 영원히 함께 해주세요♡︎ᐝ(>᎑< )",
     "yesButton": "예! (✿◠‿◠)",
     "noButton": "아니요…(；へ：)",
     "noTexts": [

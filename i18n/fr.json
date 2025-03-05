@@ -1,5 +1,4 @@
 {
-    "label": "🌍 Français",
     "pageTitle": "Tu veux être mon chéri(e)~? (✿◕‿◕)♡",
     "greeting": "Comment je dois t’appeler pour que ce soit trop mignon~? (｡♥‿♥｡)",
     "subGreeting": "Chuut~ Tu peux garder le secret si tu veux~ (⁄ ⁄•⁄ω⁄•⁄ ⁄)",
@@ -9,8 +8,8 @@
     "douyinLinkText": "TikTok version chinoise (๑˃ᴗ˂)ﻭ",
     "repoLinkText": "Code source (ﾉ◕ヮ◕)ﾉ*:･ﾟ✧",
     "freeNotice": "ฅ•ﻌ•ฅ Projet 100% gratuit! Si on t’a fait payer, demande un remboursement! (╯°□°）╯",
-    "questionTemplate": "{{username}}~ Tu veux être mon amour pour toujours~? (ﾉ>ω<)ﾉ♡",
-    "loveMessage": "BOOM! Je t’aime trop trop trop!!! ♡⸜(˶˃ ᵕ ˂˶)⸝\n{{username}}! Tu as volé mon cœur~ (灬º‿º灬)♡",
+    "questionTemplate": "{username}~ Tu veux être mon amour pour toujours~? (ﾉ>ω<)ﾉ♡",
+    "loveMessage": "BOOM! Je t’aime trop trop trop!!! ♡⸜(˶˃ ᵕ ˂˶)⸝\n{username}! Tu as volé mon cœur~ (灬º‿º灬)♡",
     "yesButton": "Ouiii~! (✧∀✧)",
     "noButton": "Non… (；へ：)",
     "noTexts": [

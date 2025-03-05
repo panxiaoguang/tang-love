@@ -1,5 +1,4 @@
 {
-    "label": "🌍 Deutsch",
     "pageTitle": "Willst du mein Schatz sein~? (✿◕‿◕)♡",
     "greeting": "Wie soll ich dich nennen, damit es super süß klingt~? (｡♥‿♥｡)",
     "subGreeting": "Geheim halten? Kein Problem~ (⁄ ⁄•⁄ω⁄•⁄ ⁄)",
@@ -9,8 +8,8 @@
     "douyinLinkText": "TikTok China Version (๑˃ᴗ˂)ﻭ",
     "repoLinkText": "Quellcode (ﾉ◕ヮ◕)ﾉ*:･ﾟ✧",
     "freeNotice": "ฅ•ﻌ•ฅ 100% kostenlos! Falls du bezahlt hast, hol dir dein Geld zurück! (╯°□°）╯",
-    "questionTemplate": "{{username}}~ Willst du für immer mein Schatz sein~? (ﾉ>ω<)ﾉ♡",
-    "loveMessage": "BOOM! Ich liebe dich soooo sehr!!! ♡⸜(˶˃ ᵕ ˂˶)⸝\n{{username}}! Du hast mein Herz gestohlen~ (灬º‿º灬)♡",
+    "questionTemplate": "{username}~ Willst du für immer mein Schatz sein~? (ﾉ>ω<)ﾉ♡",
+    "loveMessage": "BOOM! Ich liebe dich soooo sehr!!! ♡⸜(˶˃ ᵕ ˂˶)⸝\n{username}! Du hast mein Herz gestohlen~ (灬º‿º灬)♡",
     "yesButton": "Ja, natürlich~! (✧∀✧)",
     "noButton": "Nein… (；へ：)",
     "noTexts": [

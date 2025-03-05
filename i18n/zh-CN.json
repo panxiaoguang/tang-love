@@ -1,5 +1,4 @@
 {
-    "label": "🌍 简体中文",
     "pageTitle": "可以成为我的恋人吗？",
     "greeting": "你希望我怎么称呼你呢？(*>﹏<*)",
     "subGreeting": "不想告诉我的话也可以留空哦",
@@ -9,8 +8,8 @@
     "douyinLinkText": "抖音( •̀ ω •́ )",
     "repoLinkText": "源代码仓库ˋ( ° ▽、° )",
     "freeNotice": "ฅ•ω•ฅ 这是完全免费的项目哦！如果你花钱了，快去找坏蛋退款！",
-    "questionTemplate": "可以成为我的恋人吗？{{username}}",
-    "loveMessage": "!!!喜欢你!! ( >᎑<)♡︎ᐝ {{username}}  ♡︎ᐝ(>᎑< )",
+    "questionTemplate": "可以成为我的恋人吗？{username}",
+    "loveMessage": "!!!喜欢你!! ( >᎑<)♡︎ᐝ {username}  ♡︎ᐝ(>᎑< )",
     "yesButton": "可以",
     "noButton": "不要",
     "noTexts": [

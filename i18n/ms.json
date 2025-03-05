@@ -1,5 +1,4 @@
 {
-    "label": "🌍 Bahasa Melayu",
     "pageTitle": "Jadi sayang aku boleh tak~? (✿◕‿◕)♡",
     "greeting": "Aku nak panggil kamu apa yang comel ehh~? (｡♥‿♥｡)",
     "subGreeting": "Rahsia pun tak apa~ Hehehe~ (⁄ ⁄•⁄ω⁄•⁄ ⁄)",
@@ -9,8 +8,8 @@
     "douyinLinkText": "TikTok versi China (๑˃ᴗ˂)ﻭ",
     "repoLinkText": "Kod sumber (ﾉ◕ヮ◕)ﾉ*:･ﾟ✧",
     "freeNotice": "ฅ•ﻌ•ฅ Percuma 100% tau~ Kalau ada orang suruh bayar, cepat mintak refund! (╯°□°）╯",
-    "questionTemplate": "{{username}}~ Nak jadi pasangan aku selamanya tak~? (ﾉ>ω<)ﾉ♡",
-    "loveMessage": "BOOM! Aku sayang kamu sangat sangat!!! ♡⸜(˶˃ ᵕ ˂˶)⸝\n{{username}}! Hati aku dah kena curi lah~ (灬º‿º灬)♡",
+    "questionTemplate": "{username}~ Nak jadi pasangan aku selamanya tak~? (ﾉ>ω<)ﾉ♡",
+    "loveMessage": "BOOM! Aku sayang kamu sangat sangat!!! ♡⸜(˶˃ ᵕ ˂˶)⸝\n{username}! Hati aku dah kena curi lah~ (灬º‿º灬)♡",
     "yesButton": "Mestilah nak~! (✧∀✧)",
     "noButton": "Tak nak… (；へ：)",
     "noTexts": [
