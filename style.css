@@ -2,8 +2,7 @@
 @font-face {
     font-family: 'Lolita';
     src: url('assets/fonts/Lolita.woff2') format('woff2'),
-         url('assets/fonts/Lolita.woff') format('woff'),
-         url('assets/fonts/Lolita.ttf') format('truetype');
+         url('assets/fonts/Lolita.woff') format('woff');
     font-weight: normal;
     font-style: normal;
 }
@@ -100,20 +99,23 @@ input[type="text"]:focus {
 /* 操作行样式 */
 .action-row {
     display: flex;
-    justify-content: center;
+    justify-content: space-between; /* 确保按钮左右对半分 */
     align-items: center;
+    width: 100%;
 }
 
 /* 确认按钮和语言选择器通用样式 */
 #confirmNameButton,
 #languageSelect.styled-select {
+    flex: 1;
+    width: 48%; /* 确保按钮宽度为 50% */
     font-family: 'Lolita', Arial, sans-serif;
-    font-size: 4vw;
+    font-size: 4vw; /* 使用 vw 单位使字体自适应 */
     padding: 10px 20px;
     border: none;
     border-radius: 20px;
     cursor: pointer;
-    margin: 10px;
+    margin: 10px 1%;
     background-color: #a581d4;
     color: white;
     transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
@@ -376,6 +378,7 @@ input[type="text"]:focus {
         font-size: 5.5vw;
         padding: 8px 15px;
         margin: 5px;
+        min-width: 45%; /* 确保按钮在移动端不会被挤压 */
     }
     input[type="text"] {
         font-size: 16px;
